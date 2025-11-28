@@ -193,6 +193,10 @@ body:has(.card[data-color="green"]:hover) {
   display: inline-block;
 }
 
+canvas {
+  touch-action: none;
+}
+
 @keyframes wave {
   0% {
     transform: rotate(0deg);
