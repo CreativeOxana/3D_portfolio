@@ -13,6 +13,13 @@ body {
   font-family: "Work Sans", sans-serif;
 }
 
+canvas {
+  touch-action: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
 body:has(.card[data-color="blue"]:hover) {
   background-color: rgb(var(--blue-rgb) / 25%);
 }
@@ -191,10 +198,6 @@ body:has(.card[data-color="green"]:hover) {
   animation: wave 2.5s infinite;
   transform-origin: 70% 70%;
   display: inline-block;
-}
-
-canvas {
-  touch-action: none;
 }
 
 @keyframes wave {
